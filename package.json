@@ -1,0 +1,32 @@
+{
+  "name": "reactzxc",
+  "version": "1.0.0",
+  "description": "My sample react version",
+  "main": "index.js",
+  "repository": "git@github.com:kozlovzxc/reactzxc.git",
+  "author": "Kozlov Nikita <kozlovzxc@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "_prettier": "prettier -c src",
+    "format:check": "yarn _prettier",
+    "format:fix": "yarn _prettier --write",
+    "_eslint": "eslint src",
+    "lint:check": "yarn _eslint",
+    "lint:fix": "yarn _eslint --fix",
+    "_tsc": "tsc --noEmit",
+    "types:check": "yarn _tsc",
+    "test": "jest",
+    "check-all": "yarn format:check; yarn lint:check; yarn types:check; yarn test"
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.15.0",
+    "@types/jest": "^27.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.29.3",
+    "@typescript-eslint/parser": "^4.29.3",
+    "eslint": "^7.32.0",
+    "jest": "^27.1.0",
+    "prettier": "^2.3.2",
+    "ts-jest": "^27.0.5",
+    "typescript": "^4.4.2"
+  }
+}
