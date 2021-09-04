@@ -1,11 +1,13 @@
 {
     "compilerOptions": {
+        "rootDir": "src",
         "strict": true,
         "esModuleInterop": true,
-        "jsx": "preserve"
+        "jsx": "preserve",
+        "outDir": "dist"
     },
     "include": [
-        "src/**/*.{ts,tsx}", 
+        "src/**/*.ts", 
         "src/**/*.test.{ts,tsx}",
         "src/**/*.d.ts",
     ]

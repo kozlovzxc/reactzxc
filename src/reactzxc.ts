@@ -52,7 +52,8 @@ export const render = (
   Object.keys(element.props)
     .filter(isProperty)
     .forEach((key) => {
-      // @ts-expect-error it's too hard to set right key type
+      // TODO: fix later
+      // @ts-expect-error it's too hard to get the right keys right now
       dom[key] = element.props[key];
     });
 

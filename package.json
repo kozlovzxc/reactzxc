@@ -13,8 +13,7 @@
     "_eslint": "eslint src",
     "lint:check": "yarn _eslint",
     "lint:fix": "yarn _eslint --fix",
-    "_tsc": "tsc --noEmit",
-    "types:check": "yarn _tsc",
+    "types:check": "tsc --noEmit _tsc",
     "test": "jest",
     "check-all": "yarn format:check; yarn lint:check; yarn types:check; yarn test"
   },
